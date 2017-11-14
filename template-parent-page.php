@@ -30,7 +30,7 @@ Template Name: Parent Page
 							<?php } ?>
 						</div>
 					
-				<?php elseif (is_page('Make an Appointment') ) : ?>
+				<?php elseif (is_page('Make an Appointment') || is_page('Coursework Help') ) : ?>
 					<?php foreach ( $pages as $page ) { ?>
 						<div class="row appointments">
 							<div class="small-12 large-3 columns">
