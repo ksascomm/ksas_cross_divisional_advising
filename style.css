@@ -180,6 +180,9 @@ li.person {
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
 }
+.home .button-group {
+    margin-bottom: 0;
+}
 .padding-top-zero {
     padding-top: 0rem !important;
 }
@@ -262,6 +265,7 @@ p.excerpt.post-50 {
 #sidebar1 {
     border-radius: 14px;
     background: #FBD872;
+    margin: 0;
 }
 /*--- template 2a -make an appointment---*/
 
