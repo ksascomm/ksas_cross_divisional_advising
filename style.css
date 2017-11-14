@@ -121,9 +121,6 @@ h1.search-result {
 .caption h3 {
     font-size: 1.75rem;
 }
-ul#directory {
-    margin-left: 0px;
-}
 li.person {
     min-height: inherit;
     padding-left: inherit;
