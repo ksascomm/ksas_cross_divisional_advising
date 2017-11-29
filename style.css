@@ -281,3 +281,7 @@ p.excerpt.post-50 {
     width: calc(25% - 10px);
     margin-right: 10px;
 }
+
+.top-bar .menu {
+    font-size: 1rem;
+}
