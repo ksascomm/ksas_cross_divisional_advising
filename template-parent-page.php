@@ -21,16 +21,16 @@ Template Name: Parent Page
 		<div id="inner-content" class="row">
 	
 		    <main id="main" class="small-12 large-9 large-push-1 columns" role="main">
-
-				<?php if (is_page('Student Roadmap') ) : ?>
+				<!--Student Roadmap-->
+				<?php if (is_page(112) ) : ?> 
 					
 						<div class="expanded button-group roadmap" id="parent-menu">
 							<?php foreach ( $pages as $page ) { ?>
 							  <a class="button" href="<?php echo  get_permalink($page->ID); ?>" rel="bookmark" title="<?php echo $page->post_title; ?>"><?php echo $page->post_title; ?></a>
 							<?php } ?>
 						</div>
-					
-				<?php elseif (is_page('Make an Appointment') || is_page('Coursework Help') ) : ?>
+				<!--Tutoring/Group Help & Make an Appointment-->	
+				<?php elseif (is_page(array(113, 114)) ) : ?>
 					<?php foreach ( $pages as $page ) { ?>
 						<div class="row appointments">
 							<div class="small-12 large-3 columns">
@@ -38,7 +38,6 @@ Template Name: Parent Page
 							</div>
 							<div class="small-12 large-8 columns">
 								<p class="excerpt post-<?php echo $page->ID;?>"><?php echo $page->post_excerpt; ?></p>
-
 							</div>
 						</div>
 					<?php } ?>
