@@ -21,9 +21,8 @@ Template Name: Parent Page
 		<div id="inner-content" class="row">
 	
 		    <main id="main" class="small-12 large-9 large-push-1 columns" role="main">
-				<!--Student Roadmap-->
-				<?php if (is_page(112) ) : ?> 
-					
+				<!--Student Roadmap & Completing a Degree-->
+				<?php if (is_page (array(112, 332) )) : ?> 
 						<div class="expanded button-group roadmap" id="parent-menu">
 							<?php foreach ( $pages as $page ) { ?>
 							  <a class="button" href="<?php echo  get_permalink($page->ID); ?>" rel="bookmark" title="<?php echo $page->post_title; ?>"><?php echo $page->post_title; ?></a>
