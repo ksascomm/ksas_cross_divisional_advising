@@ -92,6 +92,9 @@
 						</div>
 					</div>
 					<?php endif; ?>
+					<div class="news-feed">
+						<?php get_template_part( 'parts/hub-news' ); ?>
+					</div>
 					<?php if ( is_active_sidebar( 'homepage1' ) && is_active_sidebar( 'homepage2' )  ) : ?>
 					    <div class="row" id="hp-buckets">
 					    	<div class="small-6 columns hide-for-print" role="complementary">

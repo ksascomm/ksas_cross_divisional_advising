@@ -264,6 +264,8 @@ p.excerpt.post-50 {
     background: #FBD872;
     margin: 0;
 }
+
+
 /*--- template 2a -make an appointment---*/
 
 .row.appointments {
@@ -282,6 +284,31 @@ p.excerpt.post-50 {
     margin-right: 10px;
 }
 
+.top-bar {
+    //padding-bottom: 0;
+}
+
 .top-bar .menu {
     font-size: 1rem;
+}
+.top-bar .menu .last {
+    margin-left: 1rem;
+    background: #418def;
+    font-family: "gentona-book", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+
+@media screen and (max-width: 39.9375em) {
+    a.appointment.button {
+        font-size: .75rem;
+        font-family: "gentona-light", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    }
+}
+
+.top-bar .top-bar-left a:hover:not(.button) {
+    background: #004485;
+}
+
+.hub-article img {
+    width: 175px;
+    margin-right: 1rem;
 }
