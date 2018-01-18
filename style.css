@@ -313,6 +313,24 @@ p.excerpt.post-50 {
     margin-right: 1rem;
 }
 
-ul#menu-how-to a {
+ul#menu-how-to > li.is-dropdown-submenu-parent > a {
     background-color: #418def;
+    padding-right: 1rem; 
+}
+
+ul#menu-how-to li.is-dropdown-submenu-parent a {
+    background-color: #418def;
+}
+
+
+@media print, screen and (min-width: 40em) {
+ul#menu-how-to > li.is-dropdown-submenu-parent > a::after {
+    display: none;
+}
+ul#menu-how-to > li.is-dropdown-submenu-parent > a::before {
+    content: "\f059";
+    font-family: FontAwesome;
+    float:right;
+    padding-left:4px;
+}
 }
