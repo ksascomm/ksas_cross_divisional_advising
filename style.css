@@ -312,3 +312,7 @@ p.excerpt.post-50 {
     width: 175px;
     margin-right: 1rem;
 }
+
+ul#menu-how-to a {
+    background-color: #418def;
+}
