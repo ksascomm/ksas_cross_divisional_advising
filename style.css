@@ -23,13 +23,9 @@ html {
 }
 body {
     color: #000 !important;
-    font-weight: 400;
 }
 #mobile-nav {
     background: inherit !important;
-}
-li.current_page_item > a {
-    font-weight: bold;
 }
 .evergreen {
     background-size: cover !important;
@@ -47,13 +43,11 @@ li.current_page_item > a {
     font-size: 1.5rem;
     line-height: 1.5em;
     letter-spacing: -0.025em;
-    font-weight: 300;
     text-align: center;
 }
 .evergreen h4 {
     color: #fff;
     line-height: 1.3;
-    font-weight: 200;
     font-size: 1.75rem;
     text-align: center;
     margin-bottom: 2rem;
@@ -148,7 +142,6 @@ li.person {
         -ms-transform: translateY(50%);
         transform: translateY(50%);
         color: #fefefe;
-        font-weight: bold;
         width: 550px;
         padding: 2rem 4rem;
         font-size: 1.25rem;
@@ -219,7 +212,8 @@ a.appointment.button {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: bold;
+    font-family: 'gentona-semibold', 'Helvetica Neue', Roboto, sans-serif;
+    font-weight: 600;
 }
 p.excerpt {
     //padding-top: .5rem;
@@ -255,7 +249,8 @@ p.excerpt.post-50 {
     }
 }
 .orbit-caption a.appointment.button {
-    font-weight: 800;
+    font-family: 'gentona-semibold', 'Helvetica Neue', Roboto, sans-serif;
+    font-weight: 600;
     width: calc(25% - 10px) !important;
     margin-right: 10px !important;
 }
@@ -276,7 +271,8 @@ p.excerpt.post-50 {
 
 .roadmap .button {
     font-size: 1rem;
-    font-weight: bold;
+    font-family: 'gentona-semibold', 'Helvetica Neue', Roboto, sans-serif;
+    font-weight: 600;
 }
 .button-group.expanded .button:first-child:nth-last-child(4),
 .button-group.expanded .button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .button {
@@ -291,16 +287,10 @@ p.excerpt.post-50 {
 .top-bar .menu {
     font-size: 1rem;
 }
-.top-bar .menu .last {
-    margin-left: 1rem;
-    background: #418def;
-    font-family: "gentona-book", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-}
 
 @media screen and (max-width: 39.9375em) {
     a.appointment.button {
         font-size: .75rem;
-        font-family: "gentona-light", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     }
 }
 
@@ -333,4 +323,9 @@ ul#menu-how-to > li.is-dropdown-submenu-parent > a::before {
     float:right;
     padding-left:4px;
 }
+}
+
+.person h4 {
+    font-family: 'gentona-light', 'Helvetica Neue', Roboto, sans-serif;
+    font-weight: 300;
 }
