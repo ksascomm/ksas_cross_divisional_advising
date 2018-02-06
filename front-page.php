@@ -39,7 +39,7 @@
 					<div class="row">
 						<div class="small-12 columns">
 							<?php if ( have_rows( 'upcoming_deadlines' ) ) : ?>
-								<h2>
+								<h2 class="deadlines-heading">
 									<?php $field_name = "upcoming_deadlines";
 									$field = get_field_object($field_name);
 									echo $field['label'];?>

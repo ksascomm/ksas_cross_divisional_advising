@@ -212,8 +212,8 @@ a.appointment.button {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'gentona-semibold', 'Helvetica Neue', Roboto, sans-serif;
-    font-weight: 600;
+    font-family: 'gentona-bold', 'Helvetica Neue', Roboto, sans-serif;
+    font-weight: 700;
 }
 p.excerpt {
     //padding-top: .5rem;
@@ -249,8 +249,8 @@ p.excerpt.post-50 {
     }
 }
 .orbit-caption a.appointment.button {
-    font-family: 'gentona-semibold', 'Helvetica Neue', Roboto, sans-serif;
-    font-weight: 600;
+    font-family: 'gentona-bold', 'Helvetica Neue', Roboto, sans-serif;
+    font-weight: 700;
     width: calc(25% - 10px) !important;
     margin-right: 10px !important;
 }
@@ -271,8 +271,8 @@ p.excerpt.post-50 {
 
 .roadmap .button {
     font-size: 1rem;
-    font-family: 'gentona-semibold', 'Helvetica Neue', Roboto, sans-serif;
-    font-weight: 600;
+    font-family: 'gentona-bold', 'Helvetica Neue', Roboto, sans-serif;
+    font-weight: 700;
 }
 .button-group.expanded .button:first-child:nth-last-child(4),
 .button-group.expanded .button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .button {
@@ -328,4 +328,15 @@ ul#menu-how-to > li.is-dropdown-submenu-parent > a::before {
 .person h4 {
     font-family: 'gentona-light', 'Helvetica Neue', Roboto, sans-serif;
     font-weight: 300;
+}
+
+h2.deadlines-heading {
+    font-size: 1.5rem;
+    font-family: "quadon-extrabold", "Helvetica Neue", Roboto, sans-serif;
+    font-weight: 700;
+}
+
+h1.featured {
+    font-family: "quadon-extrabold", "Helvetica Neue", Roboto, sans-serif;
+    font-weight: 700;
 }
