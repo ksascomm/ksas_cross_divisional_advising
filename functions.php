@@ -58,6 +58,7 @@ function custom_wp_nav_menu($var) {
     'current_page_ancestor',
     'current-menu-ancestor',
     'active',
+    'external',
     'last'
     )
   ) : '';
