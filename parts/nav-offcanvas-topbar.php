@@ -40,18 +40,6 @@
 	<div class="top-bar-left show-for-large">
 		<?php joints_top_nav(); ?>
 	</div>
-	<div class="top-bar-right show-for-large">
-		<?php wp_nav_menu( array(
-			'menu' => 'How To',
-	        'container' => false,                           // Remove nav container
-	        'menu_class' => 'vertical medium-horizontal menu',       // Adding custom nav class
-	        'items_wrap' => '<ul id="%1$s" class="%2$s" data-responsive-menu="accordion medium-dropdown" data-close-on-click-inside="false">%3$s</ul>',
-	        'theme_location' => 'main-nav',        			// Where it's located in the theme
-	        'depth' => 2,                                   // Limit the depth of the nav
-	        'fallback_cb' => false,                         // Fallback function (see below)
-	        'walker' => new Topbar_Menu_Walker(),
-		)); ?>
-	</div>
 	<div class="top-bar-left hide-for-large mobile-menu">
 		<ul class="menu">
 			<li><button class="menu-icon" type="button" data-toggle="off-canvas"></button></li>
