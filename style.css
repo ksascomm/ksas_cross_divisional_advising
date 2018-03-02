@@ -164,9 +164,7 @@ li.person {
 }
 .home-intro {
     font-size: 1.25rem;
-    //background: #c3dcf5;
     padding-top: 45px;
-    //padding-bottom: 45px;
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
 }
@@ -199,6 +197,13 @@ body.rust .roof {
     border-right: 1px solid black;
     border-left: 1px solid black;
 }
+
+.dates {
+    margin-bottom: 1rem;
+}
+.date p {
+    text-align: center;
+}
 #parent-menu a.button,
 a.appointment.button {
     color: white !important;
@@ -216,12 +221,10 @@ a.appointment.button {
     font-weight: 700;
 }
 p.excerpt {
-    //padding-top: .5rem;
     padding-bottom: .5rem;
 }
 p.excerpt.post-49,
 p.excerpt.post-50 {
-    //border-bottom: 2px solid black;
 }
 #main ul li {
     margin-bottom: .25em;
@@ -281,7 +284,6 @@ p.excerpt.post-50 {
 }
 
 .top-bar {
-    //padding-bottom: 0;
 }
 
 .top-bar .menu {
