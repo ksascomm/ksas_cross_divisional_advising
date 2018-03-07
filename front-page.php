@@ -9,11 +9,13 @@
 					// to select the optimal image size per named media query.
 					if ( has_post_thumbnail( $post->ID ) ) : ?>
 						<header class="featured-hero parent front-page" role="banner" data-interchange="[<?php echo the_post_thumbnail_url('featured-small'); ?>, small], [<?php echo the_post_thumbnail_url('featured-medium'); ?>, medium], [<?php echo the_post_thumbnail_url('featured-large'); ?>, large], [<?php echo the_post_thumbnail_url('featured-xlarge'); ?>, xlarge]">
+							<?php if( $task_finder = get_field('task_finder') ) : ?>
 							<div class="orbit-caption">
 								<div class="row">
-									<h1 class="headline"><?php the_field( 'task_finder' ); ?></h1>
+									<?php echo $task_finder; ?>
 								</div>
-							</div>								
+							</div>
+							<?php endif;?>
 						</header>
 					<?php endif;?>
 
@@ -34,31 +36,35 @@
 							<?php endif; ?>
 						</div>
 					</div>
-				<?php endwhile; endif; ?>	
-				<div class="hp-buckets">
-					<div class="row">
-						<div class="small-12 columns">
-							<?php if ( have_rows( 'upcoming_deadlines' ) ) : ?>
-								<h2 class="deadlines-heading">
-									<?php $field_name = "upcoming_deadlines";
-									$field = get_field_object($field_name);
-									echo $field['label'];?>
-								</h2>
-								<div class="row">
-									<?php while ( have_rows( 'upcoming_deadlines' ) ) : the_row(); ?>
-									<div class="dates small-12 large-4 columns">
-										<div class="date">
-											<h3><?php the_sub_field( 'font_awesome_icon' ); ?></h3>
-											<h4><?php the_sub_field( 'deadline_date' ); ?></h4>
-											<p><?php the_sub_field( 'deadline_information' ); ?></p>
+				<?php endwhile; endif; ?>
+				<?php if ( have_rows( 'upcoming_deadlines' ) ) : ?>
+					<div class="hp-buckets">
+						<div class="row">
+							<div class="small-12 columns">
+								
+									<h2 class="deadlines-heading">
+										<?php $field_name = "upcoming_deadlines";
+										$field = get_field_object($field_name);
+										echo $field['label'];?>
+									</h2>
+									<div class="row">
+										<?php while ( have_rows( 'upcoming_deadlines' ) ) : the_row(); ?>
+										<div class="dates small-12 large-4 columns">
+											<div class="date">
+												<h3><?php the_sub_field( 'font_awesome_icon' ); ?></h3>
+												<h4><?php the_sub_field( 'deadline_date' ); ?></h4>
+												<p><?php the_sub_field( 'deadline_information' ); ?></p>
+											</div>
 										</div>
-									</div>
-									<?php endwhile; ?>
-								</div>	
-							<?php endif;?>
+										<?php endwhile; ?>
+									</div>	
+								
+							</div>	
 						</div>	
-					</div>	
-				</div>	
+					</div>
+				<?php else:?>
+					<hr>
+				<?php endif;?>
 		    <main id="main" role="main" class="row">
 			
 				<div class="small-12 large-8 columns">
