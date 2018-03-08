@@ -67,7 +67,7 @@
 				<?php endif;?>
 		    <main id="main" role="main" class="row">
 			
-				<div class="small-12 large-8 columns">
+				<div class="small-12 large-9 columns">
 				   
 				    <?php  //News Query		
 						$news_quantity = $theme_option['flagship_sub_news_quantity']; 
