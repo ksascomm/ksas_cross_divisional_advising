@@ -70,13 +70,10 @@
 				<div class="small-12 large-9 columns">
 				   
 				    <?php  //News Query		
-						$news_quantity = $theme_option['flagship_sub_news_quantity']; 
-						if ( false === ( $news_query = get_transient( 'news_mainpage_query' ) ) ) {
-								$news_query = new WP_Query(array(
-									'post_type' => 'post',
-									'posts_per_page' => $news_quantity)); 
-						set_transient( 'news_mainpage_query', $news_query, 2592000 );
-						} 	
+						$news_quantity = $theme_option['flagship_sub_news_quantity']; 						
+						$news_query = new WP_Query(array(
+							'post_type' => 'post',
+							'posts_per_page' => $news_quantity)); 	
 					if ( $news_query->have_posts() ) : ?>
 
 					<div class="news-feed">
