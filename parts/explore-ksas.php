@@ -2,7 +2,7 @@
 	<li class="roof-padding">
 		<form method="GET" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search" aria-label="Utility Bar Search">
 			<div class="input-group">
-				<label for="utility-search" class="screen-reader-text">
+				<label for="s" class="screen-reader-text">
 	                Search This Website
 	            </label>
 				<input type="text" value="<?php echo get_search_query(); ?>" name="s" id="s" data-swplive="true" placeholder="Search this site" aria-label="search"/>
