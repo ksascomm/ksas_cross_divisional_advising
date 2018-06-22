@@ -1,4 +1,4 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class(''); ?> role="article" itemscope itemtype="http://schema.org/WebPage">
+<article id="post-<?php the_ID(); ?>" <?php post_class(''); ?> itemscope itemtype="http://schema.org/WebPage">
 
 	<?php if ( ! is_page_template( 'template-parent-page.php' ) ) :?>
 		<?php if ( has_post_thumbnail( $post->ID ) ) : ?>

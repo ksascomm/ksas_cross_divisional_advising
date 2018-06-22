@@ -20,7 +20,7 @@ Template Name: Parent Page
 	
 		<div id="inner-content" class="row">
 	
-		    <main id="main" class="small-12 large-9 large-push-1 columns" role="main">
+		    <main id="main" class="small-12 large-9 large-push-1 columns">
 				<!--Student Roadmap & Completing a Degree-->
 				<?php if (is_page (array(112, 332) )) : ?> 
 						<div class="expanded button-group roadmap" id="parent-menu">

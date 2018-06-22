@@ -1,4 +1,4 @@
-					<footer class="footer hide-for-print" role="contentinfo">
+					<footer class="footer hide-for-print">
 						<div id="inner-footer" class="row">
 							<div class="row">
 								<div class="small-12 medium-5 columns">
