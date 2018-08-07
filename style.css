@@ -164,19 +164,29 @@ li.person {
 }
 .home-intro {
     font-size: 1.25rem;
-    padding-top: 45px;
+    padding-top: 2rem;
+    padding-bottom: .5rem;
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
 }
 .home .button-group {
     margin-bottom: 0;
 }
+
+.news-feed {
+    padding-top: .75rem;
+}
+
 .padding-top-zero {
     padding-top: 0rem !important;
 }
 .logo img {
     width: 250px;
 }
+.featured-hero.parent.front-page {
+margin-bottom: inherit;
+}
+
 @media print,
 screen and (min-width: 40em) {
     .featured-hero.parent {
